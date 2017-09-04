@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DaffodilDataSet3" targetNamespace="http://tempuri.org/DaffodilDataSet3.xsd" xmlns:mstns="http://tempuri.org/DaffodilDataSet3.xsd" xmlns="http://tempuri.org/DaffodilDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DaffodilConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DaffodilConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Daffodil.Properties.Settings.GlobalReference.Default.DaffodilConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="studentTableAdapter" GeneratorDataComponentClassName="studentTableAdapter" Name="student" UserDataComponentName="studentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DaffodilConnectionString (Settings)" DbObjectName="Daffodil.dbo.student" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[student] WHERE (([ID] = @Original_ID) AND ((@IsNull_FullName = 1 AND [FullName] IS NULL) OR ([FullName] = @Original_FullName)) AND ((@IsNull_DOB = 1 AND [DOB] IS NULL) OR ([DOB] = @Original_DOB)) AND ((@IsNull_Age = 1 AND [Age] IS NULL) OR ([Age] = @Original_Age)) AND ((@IsNull_Religion = 1 AND [Religion] IS NULL) OR ([Religion] = @Original_Religion)) AND ((@IsNull_MotherTongue = 1 AND [MotherTongue] IS NULL) OR ([MotherTongue] = @Original_MotherTongue)) AND ((@IsNull_MediumOfInstuction = 1 AND [MediumOfInstuction] IS NULL) OR ([MediumOfInstuction] = @Original_MediumOfInstuction)) AND ((@IsNull_Polio = 1 AND [Polio] IS NULL) OR ([Polio] = @Original_Polio)) AND ((@IsNull_FathersName = 1 AND [FathersName] IS NULL) OR ([FathersName] = @Original_FathersName)) AND ((@IsNull_FatherOccupation = 1 AND [FatherOccupation] IS NULL) OR ([FatherOccupation] = @Original_FatherOccupation)) AND ((@IsNull_FatherNationality = 1 AND [FatherNationality] IS NULL) OR ([FatherNationality] = @Original_FatherNationality)) AND ((@IsNull_FatherReligion = 1 AND [FatherReligion] IS NULL) OR ([FatherReligion] = @Original_FatherReligion)) AND ((@IsNull_FatherHomeAddress = 1 AND [FatherHomeAddress] IS NULL) OR ([FatherHomeAddress] = @Original_FatherHomeAddress)) AND ((@IsNull_FatherOfficeAddress = 1 AND [FatherOfficeAddress] IS NULL) OR ([FatherOfficeAddress] = @Original_FatherOfficeAddress)) AND ((@IsNull_FatherMobileNumber = 1 AND [FatherMobileNumber] IS NULL) OR ([FatherMobileNumber] = @Original_FatherMobileNumber)) AND ((@IsNull_FatherHomeNumber = 1 AND [FatherHomeNumber] IS NULL) OR ([FatherHomeNumber] = @Original_FatherHomeNumber)) AND ((@IsNull_FatherOfficeNumber = 1 AND [FatherOfficeNumber] IS NULL) OR ([FatherOfficeNumber] = @Original_FatherOfficeNumber)) AND ((@IsNull_FatherEmail = 1 AND [FatherEmail] IS NULL) OR ([FatherEmail] = @Original_FatherEmail)) AND ((@IsNull_MothersName = 1 AND [MothersName] IS NULL) OR ([MothersName] = @Original_MothersName)) AND ((@IsNull_MotherOccupation = 1 AND [MotherOccupation] IS NULL) OR ([MotherOccupation] = @Original_MotherOccupation)) AND ((@IsNull_MotherNationality = 1 AND [MotherNationality] IS NULL) OR ([MotherNationality] = @Original_MotherNationality)) AND ((@IsNull_MotherReligion = 1 AND [MotherReligion] IS NULL) OR ([MotherReligion] = @Original_MotherReligion)) AND ((@IsNull_MotherHomeAddress = 1 AND [MotherHomeAddress] IS NULL) OR ([MotherHomeAddress] = @Original_MotherHomeAddress)) AND ((@IsNull_MotherOfficeAddress = 1 AND [MotherOfficeAddress] IS NULL) OR ([MotherOfficeAddress] = @Original_MotherOfficeAddress)) AND ((@IsNull_MotherMobileNumber = 1 AND [MotherMobileNumber] IS NULL) OR ([MotherMobileNumber] = @Original_MotherMobileNumber)) AND ((@IsNull_MotherHomeNumber = 1 AND [MotherHomeNumber] IS NULL) OR ([MotherHomeNumber] = @Original_MotherHomeNumber)) AND ((@IsNull_MotherOfficeNumber = 1 AND [MotherOfficeNumber] IS NULL) OR ([MotherOfficeNumber] = @Original_MotherOfficeNumber)) AND ((@IsNull_MotherEmail = 1 AND [MotherEmail] IS NULL) OR ([MotherEmail] = @Original_MotherEmail)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FullName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FullName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DOB" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DOB" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Age" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Age" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Religion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Religion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherTongue" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherTongue" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherTongue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherTongue" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MediumOfInstuction" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MediumOfInstuction" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MediumOfInstuction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MediumOfInstuction" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Polio" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Polio" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Polio" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Polio" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FathersName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FathersName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FathersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FathersName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherOccupation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherOccupation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOccupation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherNationality" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherNationality" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherNationality" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherReligion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherReligion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherReligion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherHomeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherHomeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherOfficeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherOfficeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherMobileNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherMobileNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherHomeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherHomeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherOfficeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherOfficeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MothersName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MothersName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MothersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MothersName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherOccupation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherOccupation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOccupation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherNationality" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherNationality" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherNationality" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherReligion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherReligion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherReligion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherHomeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherHomeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherOfficeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherOfficeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherMobileNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherMobileNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherHomeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherHomeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherOfficeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherOfficeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[student] ([ID], [FullName], [DOB], [Age], [Religion], [MotherTongue], [MediumOfInstuction], [Polio], [FathersName], [FatherOccupation], [FatherNationality], [FatherReligion], [FatherHomeAddress], [FatherOfficeAddress], [FatherMobileNumber], [FatherHomeNumber], [FatherOfficeNumber], [FatherEmail], [MothersName], [MotherOccupation], [MotherNationality], [MotherReligion], [MotherHomeAddress], [MotherOfficeAddress], [MotherMobileNumber], [MotherHomeNumber], [MotherOfficeNumber], [MotherEmail]) VALUES (@ID, @FullName, @DOB, @Age, @Religion, @MotherTongue, @MediumOfInstuction, @Polio, @FathersName, @FatherOccupation, @FatherNationality, @FatherReligion, @FatherHomeAddress, @FatherOfficeAddress, @FatherMobileNumber, @FatherHomeNumber, @FatherOfficeNumber, @FatherEmail, @MothersName, @MotherOccupation, @MotherNationality, @MotherReligion, @MotherHomeAddress, @MotherOfficeAddress, @MotherMobileNumber, @MotherHomeNumber, @MotherOfficeNumber, @MotherEmail);
+SELECT ID, FullName, DOB, Age, Religion, MotherTongue, MediumOfInstuction, Polio, FathersName, FatherOccupation, FatherNationality, FatherReligion, FatherHomeAddress, FatherOfficeAddress, FatherMobileNumber, FatherHomeNumber, FatherOfficeNumber, FatherEmail, MothersName, MotherOccupation, MotherNationality, MotherReligion, MotherHomeAddress, MotherOfficeAddress, MotherMobileNumber, MotherHomeNumber, MotherOfficeNumber, MotherEmail FROM student WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FullName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DOB" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Age" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Religion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherTongue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherTongue" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MediumOfInstuction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MediumOfInstuction" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Polio" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Polio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FathersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FathersName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOccupation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherNationality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherReligion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MothersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MothersName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOccupation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherNationality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherReligion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, FullName, DOB, Age, Religion, MotherTongue, MediumOfInstuction, Polio, FathersName, FatherOccupation, FatherNationality, FatherReligion, FatherHomeAddress, FatherOfficeAddress, FatherMobileNumber, FatherHomeNumber, FatherOfficeNumber, FatherEmail, MothersName, MotherOccupation, MotherNationality, MotherReligion, MotherHomeAddress, MotherOfficeAddress, MotherMobileNumber, MotherHomeNumber, MotherOfficeNumber, MotherEmail FROM dbo.student</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[student] SET [ID] = @ID, [FullName] = @FullName, [DOB] = @DOB, [Age] = @Age, [Religion] = @Religion, [MotherTongue] = @MotherTongue, [MediumOfInstuction] = @MediumOfInstuction, [Polio] = @Polio, [FathersName] = @FathersName, [FatherOccupation] = @FatherOccupation, [FatherNationality] = @FatherNationality, [FatherReligion] = @FatherReligion, [FatherHomeAddress] = @FatherHomeAddress, [FatherOfficeAddress] = @FatherOfficeAddress, [FatherMobileNumber] = @FatherMobileNumber, [FatherHomeNumber] = @FatherHomeNumber, [FatherOfficeNumber] = @FatherOfficeNumber, [FatherEmail] = @FatherEmail, [MothersName] = @MothersName, [MotherOccupation] = @MotherOccupation, [MotherNationality] = @MotherNationality, [MotherReligion] = @MotherReligion, [MotherHomeAddress] = @MotherHomeAddress, [MotherOfficeAddress] = @MotherOfficeAddress, [MotherMobileNumber] = @MotherMobileNumber, [MotherHomeNumber] = @MotherHomeNumber, [MotherOfficeNumber] = @MotherOfficeNumber, [MotherEmail] = @MotherEmail WHERE (([ID] = @Original_ID) AND ((@IsNull_FullName = 1 AND [FullName] IS NULL) OR ([FullName] = @Original_FullName)) AND ((@IsNull_DOB = 1 AND [DOB] IS NULL) OR ([DOB] = @Original_DOB)) AND ((@IsNull_Age = 1 AND [Age] IS NULL) OR ([Age] = @Original_Age)) AND ((@IsNull_Religion = 1 AND [Religion] IS NULL) OR ([Religion] = @Original_Religion)) AND ((@IsNull_MotherTongue = 1 AND [MotherTongue] IS NULL) OR ([MotherTongue] = @Original_MotherTongue)) AND ((@IsNull_MediumOfInstuction = 1 AND [MediumOfInstuction] IS NULL) OR ([MediumOfInstuction] = @Original_MediumOfInstuction)) AND ((@IsNull_Polio = 1 AND [Polio] IS NULL) OR ([Polio] = @Original_Polio)) AND ((@IsNull_FathersName = 1 AND [FathersName] IS NULL) OR ([FathersName] = @Original_FathersName)) AND ((@IsNull_FatherOccupation = 1 AND [FatherOccupation] IS NULL) OR ([FatherOccupation] = @Original_FatherOccupation)) AND ((@IsNull_FatherNationality = 1 AND [FatherNationality] IS NULL) OR ([FatherNationality] = @Original_FatherNationality)) AND ((@IsNull_FatherReligion = 1 AND [FatherReligion] IS NULL) OR ([FatherReligion] = @Original_FatherReligion)) AND ((@IsNull_FatherHomeAddress = 1 AND [FatherHomeAddress] IS NULL) OR ([FatherHomeAddress] = @Original_FatherHomeAddress)) AND ((@IsNull_FatherOfficeAddress = 1 AND [FatherOfficeAddress] IS NULL) OR ([FatherOfficeAddress] = @Original_FatherOfficeAddress)) AND ((@IsNull_FatherMobileNumber = 1 AND [FatherMobileNumber] IS NULL) OR ([FatherMobileNumber] = @Original_FatherMobileNumber)) AND ((@IsNull_FatherHomeNumber = 1 AND [FatherHomeNumber] IS NULL) OR ([FatherHomeNumber] = @Original_FatherHomeNumber)) AND ((@IsNull_FatherOfficeNumber = 1 AND [FatherOfficeNumber] IS NULL) OR ([FatherOfficeNumber] = @Original_FatherOfficeNumber)) AND ((@IsNull_FatherEmail = 1 AND [FatherEmail] IS NULL) OR ([FatherEmail] = @Original_FatherEmail)) AND ((@IsNull_MothersName = 1 AND [MothersName] IS NULL) OR ([MothersName] = @Original_MothersName)) AND ((@IsNull_MotherOccupation = 1 AND [MotherOccupation] IS NULL) OR ([MotherOccupation] = @Original_MotherOccupation)) AND ((@IsNull_MotherNationality = 1 AND [MotherNationality] IS NULL) OR ([MotherNationality] = @Original_MotherNationality)) AND ((@IsNull_MotherReligion = 1 AND [MotherReligion] IS NULL) OR ([MotherReligion] = @Original_MotherReligion)) AND ((@IsNull_MotherHomeAddress = 1 AND [MotherHomeAddress] IS NULL) OR ([MotherHomeAddress] = @Original_MotherHomeAddress)) AND ((@IsNull_MotherOfficeAddress = 1 AND [MotherOfficeAddress] IS NULL) OR ([MotherOfficeAddress] = @Original_MotherOfficeAddress)) AND ((@IsNull_MotherMobileNumber = 1 AND [MotherMobileNumber] IS NULL) OR ([MotherMobileNumber] = @Original_MotherMobileNumber)) AND ((@IsNull_MotherHomeNumber = 1 AND [MotherHomeNumber] IS NULL) OR ([MotherHomeNumber] = @Original_MotherHomeNumber)) AND ((@IsNull_MotherOfficeNumber = 1 AND [MotherOfficeNumber] IS NULL) OR ([MotherOfficeNumber] = @Original_MotherOfficeNumber)) AND ((@IsNull_MotherEmail = 1 AND [MotherEmail] IS NULL) OR ([MotherEmail] = @Original_MotherEmail)));
+SELECT ID, FullName, DOB, Age, Religion, MotherTongue, MediumOfInstuction, Polio, FathersName, FatherOccupation, FatherNationality, FatherReligion, FatherHomeAddress, FatherOfficeAddress, FatherMobileNumber, FatherHomeNumber, FatherOfficeNumber, FatherEmail, MothersName, MotherOccupation, MotherNationality, MotherReligion, MotherHomeAddress, MotherOfficeAddress, MotherMobileNumber, MotherHomeNumber, MotherOfficeNumber, MotherEmail FROM student WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FullName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@DOB" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Age" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Religion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherTongue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherTongue" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MediumOfInstuction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MediumOfInstuction" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Polio" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Polio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FathersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FathersName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOccupation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherNationality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherReligion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FatherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MothersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MothersName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOccupation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherNationality" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherReligion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MotherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherEmail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FullName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FullName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FullName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DOB" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DOB" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Age" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Age" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Age" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Religion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Religion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Religion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherTongue" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherTongue" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherTongue" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherTongue" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MediumOfInstuction" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MediumOfInstuction" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MediumOfInstuction" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MediumOfInstuction" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Polio" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Polio" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Polio" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Polio" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FathersName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FathersName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FathersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FathersName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherOccupation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherOccupation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOccupation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherNationality" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherNationality" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherNationality" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherReligion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherReligion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherReligion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherHomeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherHomeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherOfficeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherOfficeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherMobileNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherMobileNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherHomeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherHomeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherOfficeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherOfficeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FatherEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FatherEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FatherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FatherEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MothersName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MothersName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MothersName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MothersName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherOccupation" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherOccupation" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherOccupation" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOccupation" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherNationality" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherNationality" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherNationality" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherNationality" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherReligion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherReligion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherReligion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherReligion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherHomeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherHomeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherHomeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherOfficeAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherOfficeAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherOfficeAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherMobileNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherMobileNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherMobileNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherMobileNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherHomeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherHomeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherHomeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherHomeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherOfficeNumber" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherOfficeNumber" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherOfficeNumber" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherOfficeNumber" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MotherEmail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MotherEmail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MotherEmail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MotherEmail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="DOB" DataSetColumn="DOB" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+              <Mapping SourceColumn="Religion" DataSetColumn="Religion" />
+              <Mapping SourceColumn="MotherTongue" DataSetColumn="MotherTongue" />
+              <Mapping SourceColumn="MediumOfInstuction" DataSetColumn="MediumOfInstuction" />
+              <Mapping SourceColumn="Polio" DataSetColumn="Polio" />
+              <Mapping SourceColumn="FathersName" DataSetColumn="FathersName" />
+              <Mapping SourceColumn="FatherOccupation" DataSetColumn="FatherOccupation" />
+              <Mapping SourceColumn="FatherNationality" DataSetColumn="FatherNationality" />
+              <Mapping SourceColumn="FatherReligion" DataSetColumn="FatherReligion" />
+              <Mapping SourceColumn="FatherHomeAddress" DataSetColumn="FatherHomeAddress" />
+              <Mapping SourceColumn="FatherOfficeAddress" DataSetColumn="FatherOfficeAddress" />
+              <Mapping SourceColumn="FatherMobileNumber" DataSetColumn="FatherMobileNumber" />
+              <Mapping SourceColumn="FatherHomeNumber" DataSetColumn="FatherHomeNumber" />
+              <Mapping SourceColumn="FatherOfficeNumber" DataSetColumn="FatherOfficeNumber" />
+              <Mapping SourceColumn="FatherEmail" DataSetColumn="FatherEmail" />
+              <Mapping SourceColumn="MothersName" DataSetColumn="MothersName" />
+              <Mapping SourceColumn="MotherOccupation" DataSetColumn="MotherOccupation" />
+              <Mapping SourceColumn="MotherNationality" DataSetColumn="MotherNationality" />
+              <Mapping SourceColumn="MotherReligion" DataSetColumn="MotherReligion" />
+              <Mapping SourceColumn="MotherHomeAddress" DataSetColumn="MotherHomeAddress" />
+              <Mapping SourceColumn="MotherOfficeAddress" DataSetColumn="MotherOfficeAddress" />
+              <Mapping SourceColumn="MotherMobileNumber" DataSetColumn="MotherMobileNumber" />
+              <Mapping SourceColumn="MotherHomeNumber" DataSetColumn="MotherHomeNumber" />
+              <Mapping SourceColumn="MotherOfficeNumber" DataSetColumn="MotherOfficeNumber" />
+              <Mapping SourceColumn="MotherEmail" DataSetColumn="MotherEmail" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DaffodilDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DaffodilDataSet3" msprop:Generator_UserDSName="DaffodilDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="student" msprop:Generator_TableClassName="studentDataTable" msprop:Generator_TableVarName="tablestudent" msprop:Generator_TablePropName="student" msprop:Generator_RowDeletingName="studentRowDeleting" msprop:Generator_RowChangingName="studentRowChanging" msprop:Generator_RowEvHandlerName="studentRowChangeEventHandler" msprop:Generator_RowDeletedName="studentRowDeleted" msprop:Generator_UserTableName="student" msprop:Generator_RowChangedName="studentRowChanged" msprop:Generator_RowEvArgName="studentRowChangeEvent" msprop:Generator_RowClassName="studentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" msprop:Generator_UserColumnName="DOB" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
+              <xs:element name="Religion" msprop:Generator_ColumnVarNameInTable="columnReligion" msprop:Generator_ColumnPropNameInRow="Religion" msprop:Generator_ColumnPropNameInTable="ReligionColumn" msprop:Generator_UserColumnName="Religion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherTongue" msprop:Generator_ColumnVarNameInTable="columnMotherTongue" msprop:Generator_ColumnPropNameInRow="MotherTongue" msprop:Generator_ColumnPropNameInTable="MotherTongueColumn" msprop:Generator_UserColumnName="MotherTongue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MediumOfInstuction" msprop:Generator_ColumnVarNameInTable="columnMediumOfInstuction" msprop:Generator_ColumnPropNameInRow="MediumOfInstuction" msprop:Generator_ColumnPropNameInTable="MediumOfInstuctionColumn" msprop:Generator_UserColumnName="MediumOfInstuction" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Polio" msprop:Generator_ColumnVarNameInTable="columnPolio" msprop:Generator_ColumnPropNameInRow="Polio" msprop:Generator_ColumnPropNameInTable="PolioColumn" msprop:Generator_UserColumnName="Polio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FathersName" msprop:Generator_ColumnVarNameInTable="columnFathersName" msprop:Generator_ColumnPropNameInRow="FathersName" msprop:Generator_ColumnPropNameInTable="FathersNameColumn" msprop:Generator_UserColumnName="FathersName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherOccupation" msprop:Generator_ColumnVarNameInTable="columnFatherOccupation" msprop:Generator_ColumnPropNameInRow="FatherOccupation" msprop:Generator_ColumnPropNameInTable="FatherOccupationColumn" msprop:Generator_UserColumnName="FatherOccupation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherNationality" msprop:Generator_ColumnVarNameInTable="columnFatherNationality" msprop:Generator_ColumnPropNameInRow="FatherNationality" msprop:Generator_ColumnPropNameInTable="FatherNationalityColumn" msprop:Generator_UserColumnName="FatherNationality" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherReligion" msprop:Generator_ColumnVarNameInTable="columnFatherReligion" msprop:Generator_ColumnPropNameInRow="FatherReligion" msprop:Generator_ColumnPropNameInTable="FatherReligionColumn" msprop:Generator_UserColumnName="FatherReligion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherHomeAddress" msprop:Generator_ColumnVarNameInTable="columnFatherHomeAddress" msprop:Generator_ColumnPropNameInRow="FatherHomeAddress" msprop:Generator_ColumnPropNameInTable="FatherHomeAddressColumn" msprop:Generator_UserColumnName="FatherHomeAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherOfficeAddress" msprop:Generator_ColumnVarNameInTable="columnFatherOfficeAddress" msprop:Generator_ColumnPropNameInRow="FatherOfficeAddress" msprop:Generator_ColumnPropNameInTable="FatherOfficeAddressColumn" msprop:Generator_UserColumnName="FatherOfficeAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherMobileNumber" msprop:Generator_ColumnVarNameInTable="columnFatherMobileNumber" msprop:Generator_ColumnPropNameInRow="FatherMobileNumber" msprop:Generator_ColumnPropNameInTable="FatherMobileNumberColumn" msprop:Generator_UserColumnName="FatherMobileNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherHomeNumber" msprop:Generator_ColumnVarNameInTable="columnFatherHomeNumber" msprop:Generator_ColumnPropNameInRow="FatherHomeNumber" msprop:Generator_ColumnPropNameInTable="FatherHomeNumberColumn" msprop:Generator_UserColumnName="FatherHomeNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherOfficeNumber" msprop:Generator_ColumnVarNameInTable="columnFatherOfficeNumber" msprop:Generator_ColumnPropNameInRow="FatherOfficeNumber" msprop:Generator_ColumnPropNameInTable="FatherOfficeNumberColumn" msprop:Generator_UserColumnName="FatherOfficeNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherEmail" msprop:Generator_ColumnVarNameInTable="columnFatherEmail" msprop:Generator_ColumnPropNameInRow="FatherEmail" msprop:Generator_ColumnPropNameInTable="FatherEmailColumn" msprop:Generator_UserColumnName="FatherEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MothersName" msprop:Generator_ColumnVarNameInTable="columnMothersName" msprop:Generator_ColumnPropNameInRow="MothersName" msprop:Generator_ColumnPropNameInTable="MothersNameColumn" msprop:Generator_UserColumnName="MothersName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherOccupation" msprop:Generator_ColumnVarNameInTable="columnMotherOccupation" msprop:Generator_ColumnPropNameInRow="MotherOccupation" msprop:Generator_ColumnPropNameInTable="MotherOccupationColumn" msprop:Generator_UserColumnName="MotherOccupation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherNationality" msprop:Generator_ColumnVarNameInTable="columnMotherNationality" msprop:Generator_ColumnPropNameInRow="MotherNationality" msprop:Generator_ColumnPropNameInTable="MotherNationalityColumn" msprop:Generator_UserColumnName="MotherNationality" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherReligion" msprop:Generator_ColumnVarNameInTable="columnMotherReligion" msprop:Generator_ColumnPropNameInRow="MotherReligion" msprop:Generator_ColumnPropNameInTable="MotherReligionColumn" msprop:Generator_UserColumnName="MotherReligion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherHomeAddress" msprop:Generator_ColumnVarNameInTable="columnMotherHomeAddress" msprop:Generator_ColumnPropNameInRow="MotherHomeAddress" msprop:Generator_ColumnPropNameInTable="MotherHomeAddressColumn" msprop:Generator_UserColumnName="MotherHomeAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherOfficeAddress" msprop:Generator_ColumnVarNameInTable="columnMotherOfficeAddress" msprop:Generator_ColumnPropNameInRow="MotherOfficeAddress" msprop:Generator_ColumnPropNameInTable="MotherOfficeAddressColumn" msprop:Generator_UserColumnName="MotherOfficeAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherMobileNumber" msprop:Generator_ColumnVarNameInTable="columnMotherMobileNumber" msprop:Generator_ColumnPropNameInRow="MotherMobileNumber" msprop:Generator_ColumnPropNameInTable="MotherMobileNumberColumn" msprop:Generator_UserColumnName="MotherMobileNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherHomeNumber" msprop:Generator_ColumnVarNameInTable="columnMotherHomeNumber" msprop:Generator_ColumnPropNameInRow="MotherHomeNumber" msprop:Generator_ColumnPropNameInTable="MotherHomeNumberColumn" msprop:Generator_UserColumnName="MotherHomeNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherOfficeNumber" msprop:Generator_ColumnVarNameInTable="columnMotherOfficeNumber" msprop:Generator_ColumnPropNameInRow="MotherOfficeNumber" msprop:Generator_ColumnPropNameInTable="MotherOfficeNumberColumn" msprop:Generator_UserColumnName="MotherOfficeNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherEmail" msprop:Generator_ColumnVarNameInTable="columnMotherEmail" msprop:Generator_ColumnPropNameInRow="MotherEmail" msprop:Generator_ColumnPropNameInTable="MotherEmailColumn" msprop:Generator_UserColumnName="MotherEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:student" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
